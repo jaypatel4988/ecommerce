@@ -1,14 +1,19 @@
 .main-navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
 }
 
+.site-title {
+    margin: 0;
+    padding: 0.5rem;
+}
+
 .site-title a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    color: black;
+    color: grey !important;
 }
 
 a {
@@ -39,8 +44,32 @@ h3,
 h4,
 h5,
 h6 {
-    border-left: solid medium cornflowerblue;
-    padding-left: 35px !important;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+
+h2 {
+    font-size: 1.75rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+}
+
+h4 {
+    font-size: 1.25rem !important;
+}
+
+h5 {
+    font-size: 1rem !important;
+}
+
+h6 {
+    font-size: 1rem !important;
+    font-weight: normal;
 }
 
 .blocks-gallery-item__caption {
@@ -105,4 +134,17 @@ h6 {
 .wp-block-columns .wp-block-column {
     box-shadow: rgb(0 0 0 / 30%) 0px 0px 5px 0px;
     padding: 1rem;
+}
+
+ul {
+    list-style: none !important;
+}
+
+ul li {
+    border-bottom: solid thin gainsboro;
+}
+
+.wp-block-cover-image.has-background-dim:not(.has-background-gradient):before, .wp-block-cover-image .wp-block-cover__gradient-background, .wp-block-cover.has-background-dim:not(.has-background-gradient):before, .wp-block-cover .wp-block-cover__gradient-background {
+    margin: 1rem;
+    opacity: 0.75;
 }
