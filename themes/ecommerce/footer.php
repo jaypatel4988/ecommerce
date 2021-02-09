@@ -14,19 +14,36 @@
 </div>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ecommerce' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ecommerce' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ecommerce' ), 'ecommerce', '<a href="https://jaypatel.info/">Jay Patel</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="small-4">
+					&copy; 2021 <?php bloginfo( 'name' ); ?>.
+				</div>
+				<div class="small-4">
+					<div class="grid-x">
+						<div class="small-4">
+							<a href="">Contact</a>
+						</div>
+						<div class="small-4">
+							<a href="">Policy</a>
+						</div>
+						<div class="small-4">
+							<a href="">Return</a>
+						</div>
+					</div>
+				</div>
+				<div class="small-4">
+					<div class="grid-x">
+						<div class="small-4 small-offset-4">
+							<a href="">Facebook</a>
+						</div>
+						<div class="small-4">
+							<a href="">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

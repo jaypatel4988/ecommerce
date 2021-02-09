@@ -149,6 +149,7 @@ function ecommerce_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	wp_enqueue_style( 'theme-style', get_template_directory_uri(  ) . '/assets/css/style.css' );
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri(  ) . '/assets/css/vendor/foundation.css' );
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri(  ) .'/assets/js/vendor/foundation.js' );
 }
