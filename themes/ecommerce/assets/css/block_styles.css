@@ -1,29 +1,3 @@
-.main-navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-}
-
-.site-title {
-    margin: 0;
-    padding: 0.5rem;
-}
-
-.site-title a {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: grey !important;
-}
-
-a {
-    color: #222 !important;
-}
-
-a:hover {
-    color: black !important;
-}
-
 p {
     margin-bottom: 25px;
 }

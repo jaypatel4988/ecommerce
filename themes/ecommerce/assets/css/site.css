@@ -1,0 +1,32 @@
+/* header */
+.site-header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.site-header .menu li {
+    border: none;
+}
+
+.site-header .menu a {
+    color: #fff;
+    padding: 1rem;
+    border: solid 2px transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    transition: linear 0.1s;
+}
+
+.site-header .menu a:hover {
+    border-bottom-color: white;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+/* header end */
