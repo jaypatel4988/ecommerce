@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
 /* header */
 .site-header {
     background-color: #444;
     color: #fff;
     padding: 1rem 0;
+}
+
+.site-title {
+    margin-bottom: 0;
+}
+
+.site-title a {
+    font-size: xx-large;
+    font-weight: lighter;
+    color: #fff;
 }
 
 .site-header .menu li {
@@ -30,3 +45,28 @@
     height: 100%;
 }
 /* header end */
+
+/* footer */
+.site-footer {
+    background-color: #444;
+    color: white;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.site-footer a {
+    color: #fff;
+    padding: 1rem;
+    border: solid 2px transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    transition: linear 0.1s;
+    display: block;
+    text-align: center;
+}
+
+.site-footer a:hover {
+    border-bottom-color: white;
+}
+/* footer end */

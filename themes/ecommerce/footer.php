@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
-			<div class="grid-x grid-padding-x">
+			<div class="grid-x grid-padding-x align-center-middle">
 				<div class="small-4">
 					&copy; 2021 <?php bloginfo( 'name' ); ?>.
 				</div>
