@@ -1,0 +1,54 @@
+/* shop page product */
+.woocommerce ul.products li.product a img {
+    margin-bottom: 0;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+    font-size: 1em !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #444;
+}
+
+.woocommerce ul.products li.product .price del bdi {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.woocommerce ul.products li.product .price {
+    font-weight: normal;
+    color: #444;
+}
+
+.woocommerce ul.products li.product .button {
+    margin-top: 0;
+    display: block;
+    font-weight: lighter;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background-color: #444;
+    color: white;
+    letter-spacing: 3px;
+    transition: linear 0.1s;
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background-color: #111;
+}
+
+.woocommerce span.onsale {
+    background-color: cadetblue;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 1em;
+    margin-right: -3px;
+    min-height: auto;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    border-radius: 1em;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    border-bottom-color: transparent;
+}

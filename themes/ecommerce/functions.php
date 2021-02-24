@@ -151,6 +151,7 @@ function ecommerce_scripts() {
 
 	wp_enqueue_style( 'block-style', get_template_directory_uri(  ) . '/assets/css/block_styles.css' );
 	wp_enqueue_style( 'theme-style', get_template_directory_uri(  ) . '/assets/css/site.css' );
+	wp_enqueue_style( 'woocommerce-style', get_template_directory_uri(  ) . '/assets/css/woocommerce_styles.css' );
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri(  ) . '/assets/css/vendor/foundation.css' );
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri(  ) .'/assets/js/vendor/foundation.js' );
 }
