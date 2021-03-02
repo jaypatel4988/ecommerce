@@ -18,7 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -106,8 +107,8 @@ h6 {
 }
 
 .wp-block-columns .wp-block-column {
-    box-shadow: rgb(0 0 0 / 30%) 0px 0px 5px 0px;
-    padding: 1rem;
+    /* box-shadow: rgb(0 0 0 / 30%) 0px 0px 5px 0px;
+    padding: 1rem; */
 }
 
 ul {

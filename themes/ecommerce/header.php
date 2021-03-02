@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="grid-container">
-			<div class="grid-x grid-padding-x">
+			<div class="grid-x">
 				<div class="small-6">
 					<?php
 					the_custom_logo();
@@ -49,7 +49,7 @@
 
 				<div class="small-6">
 					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg style="width: 32px; fill: white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="menu"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><rect x="3" y="11" width="18" height="2" rx=".95" ry=".95"/><rect x="3" y="16" width="18" height="2" rx=".95" ry=".95"/><rect x="3" y="6" width="18" height="2" rx=".95" ry=".95"/></g></g></svg></button>
 						<?php
 						wp_nav_menu(
 							array(
@@ -65,5 +65,3 @@
 
 		
 	</header><!-- #masthead -->
-
-<div class="grid-container">

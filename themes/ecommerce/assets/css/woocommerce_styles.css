@@ -52,3 +52,168 @@
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
     border-bottom-color: transparent;
 }
+
+.wp-block-columns {
+    margin: 0;
+}
+
+.wc-block-featured-category, .wc-block-featured-product {
+    align-items: flex-end;
+    align-content: flex-end;
+    padding: 1rem;
+}
+
+.wc-block-featured-category__title, .wc-block-featured-product__title {
+    background-color: white !important;
+    color: #222 !important;
+    padding: 1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-size: 1.25rem !important;
+}
+
+.wc-block-featured-category__link, .wc-block-featured-product__link {
+    background-color: white;
+    padding: 1rem;
+}
+
+.wc-block-featured-category__link .wp-block-button {
+    margin: 0;
+}
+
+.wc-block-featured-category .wp-block-button__link,
+.wc-block-featured-product .wp-block-button__link {
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #444;
+}
+
+.wc-block-featured-category .wp-block-button__link:hover {
+    background-color: #222;
+}
+
+/* product page */
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #222;
+    font-weight: bold;
+}
+
+.woocommerce div.product form.cart .variations tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.woocommerce div.product form.cart .variations tbody {
+    border: none;
+}
+
+.woocommerce div.product form.cart .variations tr {
+    display: flex;
+    align-items: baseline;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+    min-width: 5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.woocommerce div.product form.cart .button,
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #444;
+    padding: 0.75rem 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    color: #fff;
+}
+
+.woocommerce div.product form.cart .button:hover, .woocommerce #respond input#submit:hover , .woocommerce a.button:hover , .woocommerce button.button:hover , .woocommerce input.button:hover,
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    border: transparent;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #444;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+    display: none !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    background-color: #fff;
+    border-color: #444;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    border-color: #222;
+    background-color: #222;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+    color: white;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    border-color: #222;
+}
+
+/* User Page */
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    margin: 0;
+}
+
+.woocommerce-MyAccount-navigation-link {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.woocommerce-info {
+    border-top-color: #222;
+    background-color: transparent;
+}
+
+.woocommerce-info::before {
+    color: #222;
+}
+
+input.input-text, textarea {
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+input.input-text:focus, textarea:focus {
+    border-color: #222;
+}
+
+.woocommerce form .form-row label {
+    text-transform: uppercase;
+}
+
+.woocommerce legend {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    display: block;
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text {
+    min-width: 300px;
+}

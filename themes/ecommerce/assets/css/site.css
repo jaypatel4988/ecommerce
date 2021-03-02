@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    transition: linear 100ms;
 }
+
+body {
+    background-color: #f0f0f0 !important;
+    margin-bottom: 0 !important;
+}
+
+a, a:visited {
+    color: #222;
+}
+
+a:hover, a:focus {
+    color: #5d7b8b;
+}
+
 /* header */
 .site-header {
-    background-color: #444;
+    background-color: #222;
     color: #fff;
     padding: 1rem 0;
 }
@@ -24,18 +39,36 @@
     border: none;
 }
 
-.site-header .menu a {
+.site-header .menu > li > a {
     color: #fff;
     padding: 1rem;
     border: solid 2px transparent;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: small;
     transition: linear 0.1s;
+    letter-spacing: 2px;
 }
 
 .site-header .menu a:hover {
     border-bottom-color: white;
+}
+
+.site-header .menu .sub-menu {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header .menu .sub-menu a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: small;
+    color: #222;
+}
+
+.site-header .menu .sub-menu a:hover {
+    background-color: #222;
+    color: white;
 }
 
 .main-navigation {
@@ -48,7 +81,7 @@
 
 /* footer */
 .site-footer {
-    background-color: #444;
+    background-color: #222;
     color: white;
     padding: 0.5rem;
     align-items: center;
@@ -69,4 +102,148 @@
 .site-footer a:hover {
     border-bottom-color: white;
 }
+
+.site-footer .footer-links a {
+    text-align: left;
+    padding: 0.5rem;
+    border: none;
+    display: inline-block;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links li {
+    border: none;
+}
+
+.footer-links .footer-links-title {
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+    .footer-links {
+        text-align: center !important;
+    }
+}
 /* footer end */
+
+/* sidebar */
+.widget-area {
+    background-color: #222;
+    padding: 1rem;
+}
+
+.widget-area .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin #fff;
+}
+
+.widget-area .search-form label {
+    width: 100%;
+}
+
+.widget-area .search-field {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0.5rem;
+    color: white;
+    border: transparent;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.widget-area .search-submit {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    height: 100%;
+    margin: 0;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.widget-area .search-submit:hover {
+    background-color: #fff;
+    color: #222;
+    border-color: #fff;
+}
+/* sidebar end */
+/* article */
+article.post {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: #0004 0 0 2px 0;
+}
+
+article.post .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+article.post .entry-header .entry-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 300px;
+}
+
+@media (max-width: 576px) {
+    article.post .entry-header {
+        flex-direction: column;
+    }
+
+    article.post .entry-header .entry-meta {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+article.post .entry-footer {
+    display: flex;
+    justify-content: space-between;
+}
+/* article end */
+
+/* comments */
+.comments-area {
+    background-color: #fff;
+    box-shadow: #0004 0 0 2px 0;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.comment-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.comment-list .comment {
+    padding: 1rem;
+}
+
+.comment-list .comment:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+/* comments end */
