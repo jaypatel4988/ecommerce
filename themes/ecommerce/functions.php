@@ -51,6 +51,9 @@ if ( ! function_exists( 'ecommerce_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'ecommerce' ),
+				'footer-links' => esc_html__( 'Footer Links', 'ecommerce' ),
+				'footer-links-company' => esc_html__( 'Footer Links - Company', 'ecommerce' ),
+				'footer-links-social' => esc_html__( 'Footer Links - Social', 'ecommerce' ),
 			)
 		);
 
@@ -148,12 +151,13 @@ function ecommerce_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_style( 'foundation-style', get_template_directory_uri(  ) . '/assets/css/vendor/foundation.css' );
+	wp_enqueue_script( 'foundation-script', get_template_directory_uri(  ) .'/assets/js/vendor/foundation.js' );
 
 	wp_enqueue_style( 'block-style', get_template_directory_uri(  ) . '/assets/css/block_styles.css' );
 	wp_enqueue_style( 'theme-style', get_template_directory_uri(  ) . '/assets/css/site.css' );
 	wp_enqueue_style( 'woocommerce-style', get_template_directory_uri(  ) . '/assets/css/woocommerce_styles.css' );
-	wp_enqueue_style( 'foundation-style', get_template_directory_uri(  ) . '/assets/css/vendor/foundation.css' );
-	wp_enqueue_script( 'foundation-script', get_template_directory_uri(  ) .'/assets/js/vendor/foundation.js' );
+
 }
 add_action( 'wp_enqueue_scripts', 'ecommerce_scripts' );
 

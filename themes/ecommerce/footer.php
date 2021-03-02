@@ -11,36 +11,45 @@
 
 ?>
 
-</div>
-
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-center-middle">
-				<div class="small-4">
+				<div class="small-12">
+					<div class="grid-x">
+						<div class="small-12 medium-4 footer-links">
+							<div class="small-12 footer-links-title">Links</div>
+							<?php 
+								wp_nav_menu(
+									array(
+										'theme_location' => 'footer-links'
+									)
+								);
+							?>
+						</div>
+						<div class="small-12 medium-4 footer-links text-center">
+							<div class="small-12 footer-links-title">Company</div>
+							<?php 
+								wp_nav_menu(
+									array(
+										'theme_location' => 'footer-links-company'
+									)
+								);
+							?>
+						</div>
+						<div class="small-12 medium-4 footer-links text-right">
+							<div class="small-12 footer-links-title">Social</div>
+							<?php 
+								wp_nav_menu(
+									array(
+										'theme_location' => 'footer-links-social'
+									)
+								);
+							?>
+						</div>
+					</div>
+				</div>
+				<div class="small-12 text-center footer-bottom">
 					&copy; 2021 <?php bloginfo( 'name' ); ?>.
-				</div>
-				<div class="small-4">
-					<div class="grid-x">
-						<div class="small-4">
-							<a href="">Contact</a>
-						</div>
-						<div class="small-4">
-							<a href="">Policy</a>
-						</div>
-						<div class="small-4">
-							<a href="">Return</a>
-						</div>
-					</div>
-				</div>
-				<div class="small-4">
-					<div class="grid-x">
-						<div class="small-4 small-offset-4">
-							<a href="">Facebook</a>
-						</div>
-						<div class="small-4">
-							<a href="">Instagram</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
