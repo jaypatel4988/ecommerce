@@ -188,3 +188,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Installing Glide Slider
+function ecommerce_glide_slider() {
+	if ( basename(get_page_template( )) == 'page-home.php' ) {
+		wp_enqueue_style( 'glide-css', get_template_directory_uri() . '/assets/vendor/glide/css/glide.core.min.css' );
+		wp_enqueue_style( 'glide-theme', get_template_directory_uri() . '/assets/vendor/glide/css/glide.theme.min.css' );
+		wp_enqueue_script( 'glide-js', get_template_directory_uri() . '/assets/vendor/glide/glide.min.js' );
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'ecommerce_glide_slider' );
