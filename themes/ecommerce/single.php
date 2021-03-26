@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main grid-container">
+	<main id="primary" class="site-main grid-container single">
 
 		<article class="post">
 			<?php

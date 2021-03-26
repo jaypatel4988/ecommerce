@@ -217,3 +217,14 @@ input.input-text:focus, textarea:focus {
 #add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text {
     min-width: 300px;
 }
+
+.wc-block-featured-category {
+    background-color: #ccc;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wc-block-featured-category::before {
+    z-index: -1 !important;
+}

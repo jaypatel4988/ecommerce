@@ -198,3 +198,20 @@ function ecommerce_glide_slider() {
 }
 
 add_action( 'wp_enqueue_scripts', 'ecommerce_glide_slider' );
+
+// registering new custom post type
+function custom_post_registration() {
+	register_post_type( 'featured', array(
+		"labels" => array(
+			"name" => __('Featured Shoes'),
+			'singular_name' => __('Feature Shoe'),
+		),
+		"public" => true,
+		"has_archive" => true,
+		'show_in_rest' => true,
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail')
+	) );
+}
+
+// adding custom post type to my theme
+add_action( 'init', 'custom_post_registration' );

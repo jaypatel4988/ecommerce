@@ -6,8 +6,8 @@
         <div class="glide__track" data-glide-el="track" >
             <div class="glide__slides">
                 <section class="glide__slide feature" style="background-image: url(<?php the_post_thumbnail_url(); ?>); min-height: 60vh; background-size: cover; background-position: center;"></section>
-                <section class="glide__slide feature" style="background-image: url('http://test123.local/wp-content/uploads/2021/03/nike-cosmic-unity-basketball-shoe-official-images-release-date-1_hd_1600.jpg'); min-height: 60vh; background-size: cover; background-position: center;"></section>
-                <section class="glide__slide feature" style="background-image: url('http://test123.local/wp-content/uploads/2021/03/photo-1582588678413-dbf45f4823e9.jpg'); min-height: 60vh; background-size: cover; background-position: center;"></section>
+                <section class="glide__slide feature" style="background-image: url('<?php site_url() ?>/wp-content/uploads/2021/03/nike-cosmic-unity-basketball-shoe-official-images-release-date-1_hd_1600.jpg'); min-height: 60vh; background-size: cover; background-position: center;"></section>
+                <section class="glide__slide feature" style="background-image: url('<?php site_url() ?>/wp-content/uploads/2021/03/photo-1582588678413-dbf45f4823e9.jpg'); min-height: 60vh; background-size: cover; background-position: center;"></section>
             </div>
         </div>
 

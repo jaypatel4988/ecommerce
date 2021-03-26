@@ -77,6 +77,10 @@ a:hover, a:focus {
     align-items: center;
     height: 100%;
 }
+
+.site-header .custom-logo {
+    max-width: 240px;
+}
 /* header end */
 
 /* footer */
@@ -250,4 +254,38 @@ article.post .entry-footer {
 
 .glide {
     margin-bottom: 2rem;
+}
+
+.archive .wc-block-featured-product__title,
+.single .wc-block-featured-product__title {
+    text-align: left;
+    padding: 16px 48px 0 !important;
+}
+
+.archive .post-thumbnail,
+.single .post-thumbnail {
+    display: none;
+}
+
+.featured-shoe {
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.featured-shoe img {
+    max-width: 6rem;
+    border: solid thin;
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.featured-shoe div {
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+.featured-shoe h3 {
+    font-size: medium !important;
+    font-weight: bold;
 }

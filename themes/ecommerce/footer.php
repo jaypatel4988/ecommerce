@@ -13,6 +13,37 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
+
+			<!-- show 3 custom posts types -->
+			<div class="grid-x grid-padding x-align-center-middle">
+				<div class="small-12 text-center">
+					<h4>Featured Shoes</h4>
+				</div>
+				<?php 
+				$custom_posts = new WP_Query(array("post_type" => "featured"));
+				
+				// showing posts
+				if ( $custom_posts->have_posts(  ) ) {
+					while ($custom_posts->have_posts(  )) {
+						$custom_posts->the_post(  );
+						$image = get_the_post_thumbnail_url( $post );
+
+						echo '<div class="small-12 medium-4">';
+
+						echo '<a class="featured-shoe" href="'. get_post_permalink( ) .'">';
+
+						echo '<img src="'. $image .'" />';
+
+						echo '<div><h3>'. get_the_title() .'</h3><span>'. get_the_excerpt() .'</span></div>';
+
+						echo '</a>';
+
+						echo '</div>';
+					}
+				}
+				?>
+			</div>
+
 			<div class="grid-x grid-padding-x align-center-middle">
 				<div class="small-12">
 					<div class="grid-x">
